@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/components/toast-container/toast-container.component.scss"],
+  "sourcesContent": ["@use \"variables\";\n@use \"mixins\";\n\n.toast-container{\n  position: fixed;\n  top: 1rem;\n  right: 1rem;\n  z-index: 9999;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-end;\n}"],
+  "mappings": ";AAGA,CAAA;AACE,YAAA;AACA,OAAA;AACA,SAAA;AACA,WAAA;AACA,WAAA;AACA,kBAAA;AACA,eAAA;;",
+  "names": []
+}

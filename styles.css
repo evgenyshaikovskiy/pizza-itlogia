@@ -1,0 +1,46 @@
+/* src/styles.scss */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Muller Regular";
+  src: url("./media/Muller.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body {
+  height: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family:
+    "Muller Regular",
+    Arial,
+    sans-serif;
+  background: #fff;
+}
+body ::-webkit-scrollbar {
+  scrollbar-color: #dfdfdf rgba(255, 255, 255, 0.4);
+  scrollbar-width: thin;
+  width: 6px;
+  height: 6px;
+}
+body ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+}
+body ::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #dfdfdf;
+}
+a {
+  text-decoration: none;
+}
+
+/* angular:styles/global:styles */
+/*# sourceMappingURL=styles.css.map */
