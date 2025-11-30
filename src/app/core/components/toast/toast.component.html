@@ -1,0 +1,16 @@
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  @if(toast.header) {
+  <div class="toast__header">{{ toast.header }}</div>
+  }
+  <div class="toast__body">
+    <p>{{ toast.message }}</p>
+    <button
+      type="button"
+      class="toast__dismiss"
+      (click)="dismiss()"
+      aria-label="Close"
+    >
+      &times;
+    </button>
+  </div>
+</div>

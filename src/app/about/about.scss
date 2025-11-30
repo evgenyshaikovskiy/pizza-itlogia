@@ -1,0 +1,143 @@
+@use "variables";
+@use "mixins";
+
+.about {
+  display: flex;
+  flex-flow: column;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__content {
+    flex: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.85fr auto;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+
+  &__title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 800;
+    color: variables.$orange-secondary-color;
+  }
+
+  &__brand {
+    color: variables.$orange-heading-color;
+  }
+
+  &__benefits {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+  }
+
+  &__benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  &__image-wrapper {
+    margin-top: -50px;
+  }
+
+  &__choose-btn {
+    @include mixins.btn-primary;
+    color: variables.$dark-text-color;
+    background-color: variables.$orange-heading-color;
+
+    max-width: 225px;
+    height: 60px;
+    align-self: flex-start;
+  }
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    color: variables.$orange-heading-color;
+  }
+
+  &__description {
+    color: variables.$orange-secondary-color;
+  }
+
+  &__title {
+    color: variables.$orange-heading-color;
+  }
+}
+
+
+@media (max-width: variables.$breakpoint-l) {
+  .about {
+    &__content {
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-m) {
+  .about {
+
+    &__content {
+      grid-template-columns: 0.9fr auto;
+    }
+
+    &__image-wrapper {
+      margin-top: unset;
+      img {
+        max-width: 400px;
+        max-height: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-s) {
+  .about {
+    &__content {
+      grid-template-columns: 1fr auto;
+
+    }
+
+    &__image-wrapper {
+      margin-top: 30px;
+      img {
+        max-width: 300px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$breakpoint-xs) {
+  .about {
+    &__content {
+      display: flex;
+      flex-flow: column-reverse;
+    }
+
+    &__image-wrapper {
+      margin-top: unset;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

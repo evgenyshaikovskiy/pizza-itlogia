@@ -1,0 +1,29 @@
+<section class="about">
+  <h1 class="about__title">
+    Самая вкусная пицца в мире <br />
+    только в <span class="about__brand">Pizza Cheff</span>
+  </h1>
+
+  <div class="about__container">
+    <div class="about__content">
+      <div class="about__benefits">
+        <div class="about__benefits-grid">
+          @for(benefit of benefits; track $index) {
+          <div class="benefit">
+            <img [src]="benefit.src" class="benefit__img" alt="benefit-img" />
+            <div class="benefit__text">
+              <div class="benefit__title">{{ benefit.title }}</div>
+              <div class="benefit__description">{{ benefit.description }}</div>
+            </div>
+          </div>
+          }
+        </div>
+        <button type="button" class="about__choose-btn">Выбрать пиццу</button>
+      </div>
+
+      <div class="about__image-wrapper">
+        <img alt="pizza-big" src="assets/img/pizza_big.png" />
+      </div>
+    </div>
+  </div>
+</section>

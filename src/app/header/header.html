@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header__container">
+    <a href="#" class="logo">
+      <svg-icon src="assets/icons/svg/pizza.svg" class="logo__icon"></svg-icon>
+      <div class="logo__text">
+        <span>pizza<br />cheff</span>
+      </div>
+    </a>
+
+    <div tabindex="0" class="menu-toggle" (click)="toggleMenu()">
+      <svg-icon src="assets/icons/svg/burger.svg" class="menu-toggle__icon"></svg-icon>
+    </div>
+
+    <nav class="nav-menu" [class.nav-menu--active]="isMenuOpen">
+      <ul class="nav-menu__list">
+        @for (link of menuLinks; track $index) {
+        <li class="nav-menu__item">
+          <a tabindex="0" [href]="link.href" (click)="closeMenu()" (keydown.enter)="closeMenu()" class="nav-menu__link">{{ link.label}}</a>
+        </li>
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

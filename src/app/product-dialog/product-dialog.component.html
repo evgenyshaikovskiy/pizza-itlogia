@@ -1,0 +1,14 @@
+<div class="product-dialog">
+  <div class="product-dialog__img">
+    <img [src]="product.imgSrc" alt="product-image" />
+  </div>
+  <div class="product-dialog__details">
+    <div class="product-dialog__details__name">{{ product.name }}</div>
+    <div class="product-dialog__details__ingredients">
+      Пицца состоит из: <span>{{ product.ingredients }}</span>
+    </div>
+    <div class="product-dialog__details__weight">Вес: <span>{{ product.weight }}</span></div>
+    <div class="product-dialog__details__calories">Количество каллорий: <span>{{ product.calories }}</span></div>
+    <div class="product-dialog__details__recipe">Рецепт: <span>{{ product.recipe }}</span></div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<section class="catalog">
+  <h4 class="catalog__title">Выберите свою любимую пиццу</h4>
+  <div class="catalog__container">
+    @for (item of products; track $index) {
+    <app-product-card
+      [product]="item"
+      (productClick)="productClick($event)"
+    ></app-product-card>
+    }
+  </div>
+</section>

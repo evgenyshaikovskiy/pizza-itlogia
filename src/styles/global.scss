@@ -1,0 +1,49 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  src: url("../assets/fonts/Muller.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Muller Regular", Arial, sans-serif;
+  background: variables.$white-color;
+
+  ::-webkit-scrollbar {
+    scrollbar-color: variables.$border-color rgba(255, 255, 255, 0.4);
+    scrollbar-width: thin;
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: variables.$border-color;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: variables.$border-color;
+  }
+}
+
+a {
+  text-decoration: none;
+}

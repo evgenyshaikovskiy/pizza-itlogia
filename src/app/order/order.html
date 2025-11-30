@@ -1,0 +1,54 @@
+<section class="order">
+  <div class="order__info">
+    <h3 class="order__heading">
+      <span class="cta">Хватит думать!</span><br />Доставим заказ за 30 минут!
+    </h3>
+    <div class="order__text">
+      Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления
+      заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ
+      бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим
+      сервисом и сделаем всё, чтобы наш клиент был доволен и не остался
+      голодный!
+    </div>
+  </div>
+
+  <form class="order__form" [formGroup]="form">
+    <input
+      type="text"
+      class="form__input"
+      placeholder="Ваше имя"
+      formControlName="name"
+      name="name"
+      appNoDots
+    />
+    <input
+      type="text"
+      class="form__input"
+      placeholder="Адрес доставки"
+      formControlName="address"
+      name="address"
+      appNoDots
+    />
+    <input
+      type="tel"
+      class="form__input"
+      placeholder="Телефон"
+      formControlName="phone"
+      name="phone"
+      appNoDots
+    />
+
+    <button
+      [disabled]="purchaseOrderDisabled || processing()"
+      type="submit"
+      class="order__form-btn"
+      (click)="submitOrder()"
+    >
+      Оформить заказ
+    </button>
+  </form>
+
+  <div class="order__image">
+    <img src="assets/img/pizzzzza.png" alt="pizza-flying"/>
+  </div>
+</section>

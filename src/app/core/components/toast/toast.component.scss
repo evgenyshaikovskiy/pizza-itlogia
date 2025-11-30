@@ -1,0 +1,38 @@
+@use "variables";
+@use "mixins";
+
+.toast {
+  position: relative;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+  background-color: #fff;
+  color: variables.$dark-text-color;
+
+  border: 1px solid rgba(#000, 0.5);
+
+  &__header {
+    font-size: 30px;
+    color: variables.$orange-heading-color;
+  }
+
+  &__dismiss {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    &:hover { opacity: 1; }
+  }
+
+}
