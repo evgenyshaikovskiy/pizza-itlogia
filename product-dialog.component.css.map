@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/product-dialog/product-dialog.component.scss", "src/styles/variables.scss"],
-  "sourcesContent": ["@use \"variables\";\n@use \"mixins\";\n\n.product-dialog {\n  padding: 50px 25px;\n  display: flex;\n  gap: 10px;\n\n  &__img {\n    max-width: 50%;\n    img {\n      width: 500px;\n      height: 500px;\n    }\n  }\n\n  &__details {\n    max-width: 500px;\n    display: flex;\n    flex-direction: column;\n    gap: 25px;\n\n    span {\n      font-weight: 600;\n      color: variables.$dark-text-color;\n    }\n\n    &__name {\n      font-size: 45px;\n      color: variables.$orange-heading-color;\n      font-weight: bold;\n    }\n\n    &__ingredients, &__weight, &__calories, &__recipe {\n      font-size: larger;\n    }\n  }\n}\n", "$white-color: #fff;\n$border-color: #dfdfdf;\n$orange-primary-color: #ffc468;\n$orange-secondary-color: #b99150;\n$orange-heading-color: #ffaf18;\n$orange-input-color: #CBA86E;\n$orange-black: #a46b00;\n\n$dark-text-color: #382400;\n$dark-secondary-color: #181a1a;\n$dark-text-color-1: #020303;\n\n$breakpoint-l: 1440px;\n$breakpoint-m: 1200px;\n$breakpoint-s: 1024px;\n$breakpoint-xs: 768px;\n\n$container-width: 1200px;\n"],
-  "mappings": ";AAGA,CAAA;AACE,WAAA,KAAA;AACA,WAAA;AACA,OAAA;;AAEA,CAAA;AACE,aAAA;;AACA,CAFF,oBAEE;AACE,SAAA;AACA,UAAA;;AAIJ,CAAA;AACE,aAAA;AACA,WAAA;AACA,kBAAA;AACA,OAAA;;AAEA,CANF,wBAME;AACE,eAAA;AACA,SChBY;;ADmBd,CAAA;AACE,aAAA;AACA,SCzBiB;AD0BjB,eAAA;;AAGF,CAAA;AAAA,CAAA;AAAA,CAAA;AAAA,CAAA;AACE,aAAA;;",
-  "names": []
-}

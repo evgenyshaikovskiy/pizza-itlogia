@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/landing/landing.scss", "src/styles/variables.scss"],
-  "sourcesContent": ["\n@use \"mixins\";\n@use \"variables\";\n\n:host {\n  display: flex;\n  flex-direction: column;\n  height: calc(100vh - 120px);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n\n.landing {\n  margin: 0 auto;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 150px;\n  max-width: variables.$container-width;\n}\n\n@media (max-width: variables.$breakpoint-l) {\n  :host {\n    padding: 0 50px;\n  }\n}\n\n@media (max-width: variables.$breakpoint-m) {\n  .landing {\n    max-width: calc(100vw - 100px);\n  }\n}\n\n\n", "$white-color: #fff;\n$border-color: #dfdfdf;\n$orange-primary-color: #ffc468;\n$orange-secondary-color: #b99150;\n$orange-heading-color: #ffaf18;\n$orange-input-color: #CBA86E;\n$orange-black: #a46b00;\n\n$dark-text-color: #382400;\n$dark-secondary-color: #181a1a;\n$dark-text-color-1: #020303;\n\n$breakpoint-l: 1440px;\n$breakpoint-m: 1200px;\n$breakpoint-s: 1024px;\n$breakpoint-xs: 768px;\n\n$container-width: 1200px;\n"],
-  "mappings": ";AAIA;AACE,WAAA;AACA,kBAAA;AACA,UAAA,KAAA,MAAA,EAAA;AACA,cAAA;AACA,cAAA;;AAGF,CAAA;AACE,UAAA,EAAA;AACA,UAAA;AACA,WAAA;AACA,kBAAA;AACA,OAAA;AACA,aCDgB;;ADIlB,OAAA,CAAA,SAAA,EAAA;AACE;AACE,aAAA,EAAA;;;AAIJ,OAAA,CAAA,SAAA,EAAA;AACE,GAhBF;AAiBI,eAAA,KAAA,MAAA,EAAA;;;",
-  "names": []
-}

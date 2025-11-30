@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/catalog/catalog.scss", "src/styles/variables.scss"],
-  "sourcesContent": ["@use \"variables\";\n@use \"mixins\";\n\n.catalog {\n  display: flex;\n  flex-flow: column;\n\n  &__title {\n    text-align: center;\n    color: variables.$orange-secondary-color;\n    font-weight: bold;\n    font-size: 35px;\n  }\n\n  &__container {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n    gap: 30px;\n  }\n}\n", "$white-color: #fff;\n$border-color: #dfdfdf;\n$orange-primary-color: #ffc468;\n$orange-secondary-color: #b99150;\n$orange-heading-color: #ffaf18;\n$orange-input-color: #CBA86E;\n$orange-black: #a46b00;\n\n$dark-text-color: #382400;\n$dark-secondary-color: #181a1a;\n$dark-text-color-1: #020303;\n\n$breakpoint-l: 1440px;\n$breakpoint-m: 1200px;\n$breakpoint-s: 1024px;\n$breakpoint-xs: 768px;\n\n$container-width: 1200px;\n"],
-  "mappings": ";AAGA,CAAA;AACE,WAAA;AACA,aAAA;;AAEA,CAAA;AACE,cAAA;AACA,SCNqB;ADOrB,eAAA;AACA,aAAA;;AAGF,CAAA;AACE,WAAA;AACA,yBAAA,OAAA,QAAA,EAAA,OAAA,KAAA,EAAA;AACA,OAAA;;",
-  "names": []
-}
